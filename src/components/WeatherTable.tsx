@@ -56,7 +56,7 @@ const WeatherTable: React.FC<Props> = ({ weather }) => {
                   <td className="py-0 px-4 border-b">
                     <div className="flex items-center">
                       <img
-                        src={`http://openweathermap.org/img/wn/${item.weather[0].icon}.png`}
+                        src={`https://openweathermap.org/img/wn/${item.weather[0].icon}.png`}
                         alt={item.weather[0].description}
                         className="w-15 h-15 "
                       />
