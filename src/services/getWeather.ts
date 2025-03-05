@@ -85,7 +85,7 @@ export const getWeather = async (city: string, cnt = 0) => {
 
   try {
     const responseDecode: AxiosResponse<ICoordinate[]> = await axios.get(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
     );
 
     const coordinates = responseDecode.data;
